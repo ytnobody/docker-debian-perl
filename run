@@ -3,4 +3,4 @@ if [ $TIMEZONE ] ; then
     ln -fs /usr/share/zoneinfo/$TIMEZONE /etc/localtime
 fi
 
-/bin/bash
+/bin/bash $*
