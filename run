@@ -1,0 +1,6 @@
+if [ $TIMEZONE ] ; then
+    rm -f /etc/localtime && \
+    ln -fs /usr/share/zoneinfo/$TIMEZONE /etc/localtime
+fi
+
+/bin/bash

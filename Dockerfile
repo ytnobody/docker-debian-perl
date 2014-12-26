@@ -7,5 +7,7 @@ RUN apt-get clean
 
 RUN curl -L http://xrl.us/cpanm > /usr/bin/cpanm
 RUN chmod +x /usr/bin/cpanm
+ADD run /usr/bin/run
+RUN chmod +x /usr/bin/run
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT /usr/bin/run

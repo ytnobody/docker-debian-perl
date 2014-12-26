@@ -10,7 +10,9 @@ Simple image that included system perl of debian
 
 5.14.2
 
-## entrypoint
+## Environment Variables
 
-/bin/bash
+* TIMEZONE - timezone specifier
+
+  ex.) Asia/Tokyo
 
